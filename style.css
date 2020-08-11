@@ -1,0 +1,43 @@
+#results {
+  position: absolute;
+  background: white;
+  padding: 1px 2px;
+  list-style: none;
+  z-index: 666;
+}
+#results img {
+  height: 50px;
+  width: 120px;
+  object-fit: cover;
+  position: relative;
+}
+#results p {
+  display: inline-block;
+}
+#results li:hover {
+  background: #ccf;
+  color: #00f !important;
+}
+#results li:hover a {
+  background: #ccf;
+  color: #00f !important;
+}
+#results li {
+  color: #000000 !important;
+  padding: 6px 2px;
+}
+#results li.selected {
+  background: #ccf;
+  color: #00f !important;
+}
+#results li.selected a {
+  background: #ccf;
+  color: #00f !important;
+}
+#results a {
+  /* height: 100%; */
+  /* background: green; */
+  width: 100%;
+  color: #000000 !important;
+  display: inline-block;
+}
