@@ -19,13 +19,6 @@ const MAX_NUMBER_OF_RESULTS = 4;
 let focussedOffer = -1;
 let numberOfResults = 0;
 
-//
-// const setWidth = () => {
-//   resultsDom.style.width = inputDom.clientWidth + "px";
-// };
-// setWidth();
-window.addEventListener("resize", setWidth);
-
 inputDom.addEventListener("keyup", async (e) => {
   if (e.key === "ArrowDown") {
     focussedOffer++;
@@ -56,7 +49,6 @@ inputDom.addEventListener("keyup", async (e) => {
     const res = await index.search(searchValue);
 
     resultsDom.innerHTML = "";
-  //  setWidth();
     if (searchValue) {
       res.hits.slice(0, MAX_NUMBER_OF_RESULTS).forEach((res) => {
         const li = document.createElement("li");
