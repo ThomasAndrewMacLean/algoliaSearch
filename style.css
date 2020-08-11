@@ -48,14 +48,14 @@
 }
 #results li:hover {
   background: #ccf;
-  color: #00f !important;
+  color: #00f;
 }
 #results li:hover a {
   background: #ccf;
-  color: #00f !important;
+  color: #00f;
 }
 #results li {
-  color: #000000 !important;
+  color: #666;
   padding: 2px;
   margin: 6px 0;
   background: lightblue;
@@ -64,17 +64,17 @@
 }
 #results li.selected {
   background: #ccf;
-  color: #00f !important;
+  color: #00f;
 }
 #results li.selected a {
   background: #ccf;
-  color: #00f !important;
+  color: #00f;
 }
 #results a {
   /* height: 100%; */
   /* background: green; */
   width: 100%;
-  color: #000000 !important;
+  color: #666;
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
