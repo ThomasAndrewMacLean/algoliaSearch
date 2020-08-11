@@ -56,7 +56,11 @@
 }
 #results li {
   color: #000000 !important;
-  padding: 6px 2px;
+  padding: 2px;
+  margin: 6px 0;
+  background: lightblue;
+  /* outline: 1px solid; */
+  display: flex;
 }
 #results li.selected {
   background: #ccf;
@@ -74,4 +78,8 @@
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
+}
+
+#results a p {
+  margin-bottom: 0;
 }
