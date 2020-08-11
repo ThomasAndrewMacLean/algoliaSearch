@@ -1,9 +1,13 @@
+#searchWrap {
+  position: relative;
+}
 #results {
   position: absolute;
   background: white;
   padding: 1px 2px;
   list-style: none;
   z-index: 666;
+  width: 100%;
   background-color: blueviolet;
 }
 #results img {
