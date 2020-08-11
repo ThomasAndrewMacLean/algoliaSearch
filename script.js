@@ -51,9 +51,9 @@ inputDom.addEventListener("keyup", async (e) => {
 
     resultsDom.innerHTML = "";
     if (searchValue) {
-      searchWrapDom.classList.remove("hasResults");
-      resultsDom.classList.remove("hasResults");
-      
+      searchWrapDom.classList.add("hasResults");
+      resultsDom.classList.add("hasResults");
+
       res.hits.slice(0, MAX_NUMBER_OF_RESULTS).forEach((res) => {
         const li = document.createElement("li");
         li.innerHTML = `<a href=""><img src="${res.image}"/> <p>${res.Name}</p></a>`;
