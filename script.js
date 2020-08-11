@@ -56,7 +56,7 @@ inputDom.addEventListener("keyup", async (e) => {
 
       res.hits.slice(0, MAX_NUMBER_OF_RESULTS).forEach((res) => {
         const li = document.createElement("li");
-        li.innerHTML = `<a href=""><img src="${res.image}"/> <p>${res.Name}</p></a>`;
+        li.innerHTML = `<a href="offer/${res.Slug}"><img src="${res.image}"/> <p>${res.Name}</p></a>`;
         resultsDom.appendChild(li);
       });
     } else {

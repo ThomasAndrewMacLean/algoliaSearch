@@ -53,11 +53,13 @@
 #results li:hover {
   background: #ccf;
   color: #00f;
+  border: 1px solid #00f;
 }
-#results li:hover a {
+/* #results li:hover a {
   background: #ccf;
   color: #00f;
-}
+  border: 1px solid #00f;
+} */
 #results li {
   color: #666;
   padding: 2px;
