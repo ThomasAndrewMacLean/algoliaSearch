@@ -41,6 +41,7 @@
   width: 120px;
   object-fit: cover;
   position: relative;
+  margin: unset;
 }
 #results p {
   display: inline-block;
@@ -70,5 +71,7 @@
   /* background: green; */
   width: 100%;
   color: #000000 !important;
-  display: inline-block;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
 }
