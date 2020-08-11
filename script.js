@@ -7,6 +7,7 @@ const index = searchClient.initIndex("dev_NAME");
 
 const inputDom = document.getElementById("searchInput");
 const resultsDom = document.getElementById("results");
+const searchWrapDom = document.getElementById("searchWrap");
 
 // inputDom.addEventListener("focusout", () => {
 //   setTimeout(() => {
@@ -50,11 +51,17 @@ inputDom.addEventListener("keyup", async (e) => {
 
     resultsDom.innerHTML = "";
     if (searchValue) {
+      searchWrapDom.classList.remove("hasResults");
+      resultsDom.classList.remove("hasResults");
+      
       res.hits.slice(0, MAX_NUMBER_OF_RESULTS).forEach((res) => {
         const li = document.createElement("li");
         li.innerHTML = `<a href=""><img src="${res.image}"/> <p>${res.Name}</p></a>`;
         resultsDom.appendChild(li);
       });
+    } else {
+      searchWrapDom.classList.remove("hasResults");
+      resultsDom.classList.remove("hasResults");
     }
   }
 });

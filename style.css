@@ -1,9 +1,14 @@
 #searchWrap {
   position: relative;
-  box-shadow: 0 2px 16px -8px rgba(0, 0, 0, 0.64);
   padding: 15px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+#searchWrap.hasResults {
+  box-shadow: 0 2px 16px -8px rgba(0, 0, 0, 0.64);
+}
+#results.hasResults {
+  box-shadow: 0 2px 16px -8px rgba(0, 0, 0, 0.64);
 }
 #results {
   border-bottom-left-radius: 10px;
@@ -14,7 +19,6 @@
   padding: 1px 2px;
   list-style: none;
   z-index: 666;
-  box-shadow: 0 2px 16px -8px rgba(0, 0, 0, 0.64);
 
   margin-top: 15px;
   margin-left: -15px;
