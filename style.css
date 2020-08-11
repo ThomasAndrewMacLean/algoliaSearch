@@ -58,7 +58,7 @@
   color: #666;
   padding: 2px;
   margin: 6px 0;
-  background: lightblue;
+
   /* outline: 1px solid; */
   display: flex;
 }
@@ -78,6 +78,7 @@
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
+  text-decoration: none;
 }
 
 #results a p {
