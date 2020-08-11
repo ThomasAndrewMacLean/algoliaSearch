@@ -1,5 +1,7 @@
 #searchWrap {
   position: relative;
+  box-shadow: 0px 0px 8px 5px black;
+  padding: 15px;
 }
 #results {
   position: absolute;
@@ -7,8 +9,24 @@
   padding: 1px 2px;
   list-style: none;
   z-index: 666;
+  box-shadow: 0px 0px 8px 5px black;
+
+  margin-top: 15px;
+  margin-left: -15px;
   width: 100%;
+  padding: 15px;
   background-color: blueviolet;
+}
+
+#results::after {
+  content: "";
+  height: 30px;
+  width: 100%;
+  background: green;
+  display: block;
+  top: -15px;
+  left: 0;
+  position: absolute;
 }
 #results img {
   height: 50px;
