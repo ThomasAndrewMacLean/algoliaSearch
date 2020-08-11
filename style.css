@@ -1,6 +1,6 @@
 #searchWrap {
   position: relative;
-  box-shadow: 0px 0px 8px 5px black;
+  box-shadow: 0 2px 16px -8px rgba(0, 0, 0, 0.64);
   padding: 15px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -14,20 +14,19 @@
   padding: 1px 2px;
   list-style: none;
   z-index: 666;
-  box-shadow: 0px 0px 8px 5px black;
+  box-shadow: 0 2px 16px -8px rgba(0, 0, 0, 0.64);
 
   margin-top: 15px;
   margin-left: -15px;
   width: 100%;
   padding: 15px;
-  background-color: blueviolet;
 }
 
 #results::after {
   content: "";
   height: 26px;
   width: 100%;
-  background: green;
+  background: white;
   display: block;
   top: -13px;
   left: 0;
