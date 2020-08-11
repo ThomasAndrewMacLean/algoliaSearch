@@ -1,4 +1,4 @@
-console.log("???");
+console.log("🚀🚀🚀");
 const searchClient = algoliasearch(
   "X70IC4M3C7",
   "455137c21d322054345db28c47bb3c08"
@@ -8,20 +8,22 @@ const index = searchClient.initIndex("dev_NAME");
 const inputDom = document.getElementById("searchInput");
 const resultsDom = document.getElementById("results");
 
-inputDom.addEventListener("focusout", () => {
-  setTimeout(() => {
-    inputDom.value = "";
-    resultsDom.innerHTML = "";
-  }, 150);
-});
+// inputDom.addEventListener("focusout", () => {
+//   setTimeout(() => {
+//     inputDom.value = "";
+//     resultsDom.innerHTML = "";
+//   }, 150);
+// });
 
 const MAX_NUMBER_OF_RESULTS = 4;
 let focussedOffer = -1;
 let numberOfResults = 0;
-const setWidth = () => {
-  resultsDom.style.width = inputDom.clientWidth + "px";
-};
-setWidth();
+
+//
+// const setWidth = () => {
+//   resultsDom.style.width = inputDom.clientWidth + "px";
+// };
+// setWidth();
 window.addEventListener("resize", setWidth);
 
 inputDom.addEventListener("keyup", async (e) => {
@@ -54,7 +56,7 @@ inputDom.addEventListener("keyup", async (e) => {
     const res = await index.search(searchValue);
 
     resultsDom.innerHTML = "";
-    setWidth();
+  //  setWidth();
     if (searchValue) {
       res.hits.slice(0, MAX_NUMBER_OF_RESULTS).forEach((res) => {
         const li = document.createElement("li");
